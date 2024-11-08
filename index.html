@@ -32,10 +32,7 @@
     <meta name="apple-mobile-web-app-title" content="Website Majlis Pernikahan Ummi dan Ridhwan">
     <meta name="theme-color" content="#111111">
     <meta name="color-scheme" content="dark light">
-    <link rel="canonical" href="https://ulems.my.id/">
-    <link rel="shortcut icon" type="image/x-icon" href="https://ulems.my.id/favicon.ico">
-    <link rel="apple-touch-icon" sizes="192x192" href="https://ulems.my.id/assets/images/icon-192x192.png">
-    <link rel="icon" type="image/x-icon" href="https://ulems.my.id/favicon.ico">
+
 
     <!-- Preconnect CDN -->
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" crossorigin="anonymous">
@@ -70,7 +67,7 @@
 <!-- If not using comments, you can remove the data-key and data-url attributes -->
 <!-- Data theme ['auto', 'dark', 'light'] -->
 
-
+<body data-theme="auto" style="overflow-y: hidden;">
 
     <!-- Navbar Bottom -->
     <nav class="navbar bg-dark navbar-expand fixed-bottom rounded-top-4 border-top p-0" id="navbar-menu">
@@ -99,12 +96,6 @@
                     <span class="d-block" style="font-size: 0.7rem;">MAPS</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#comment">
-                    <i class="fa-solid fa-comments"></i>
-                    <span class="d-block" style="font-size: 0.7rem;">Ucapan</span>
-                </a>
-            </li>
         </ul>
     </nav>
 
@@ -113,7 +104,6 @@
 
         <!-- Home -->
         <section id="home" class="position-relative overflow-hidden p-0 m-0">
-            <img src="./assets/images/cowo.png" alt="bg" class="position-absolute opacity-25 top-50 start-50 translate-middle bg-cover-home">
 
             <div class="position-relative text-center pt-4 pb-0 px-0 m-0">
                 <h1 class="font-esthetic my-4 fw-medium" style="font-size: 2.5rem;">Walimatul Urus</h1>
@@ -138,6 +128,15 @@
                 <p class="m-0 p-0" style="font-size: 0.95rem;">Scroll Down</p>
             </div>
         </section>
+        <!-- Love Ballon animation -->
+         <div class="position-relative">
+            <div class="position-absolute" style="top: 0%; right: 5%;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="opacity-50" onload="util.animate(this, 1500, 'animate-love')" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"></path>
+                </svg>
+            </div>
+        </div>
+
 
         <!-- Wave Separator -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
@@ -149,20 +148,9 @@
             <div class="text-center">
                 <h2 class="font-arabic py-4 px-2" style="font-size: 2rem">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h2>
 
-                <!-- Love Ballon animation -->
-                <div class="position-relative">
-                    <div class="position-absolute" style="top: 0%; right: 5%;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="opacity-50" onload="util.animate(this, 1500, 'animate-love')" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"></path>
-                        </svg>
-                    </div>
-                </div>
+                
 
                 <h2 class="font-esthetic py-4 px-2" style="font-size: 2rem">Assalamualaikum Warahmatullahi Wabarakatuh</h2>
-
-                <p class="pb-3 px-3" style="font-size: 0.95rem;">Sekapur Sirih Seulas Pinang<br>Semekar Senyuman Seikhlas Hati, Saya<br></p>
-                <h3 class="font-esthetic" style="font-size: 2.0rem;">Ahmad Bin Hassan<br>Aisyah Binti Haron<br></h3>
-                <p class="pb-3 px-3" style="font-size: 0.95rem;">Dengan Segala Hormatnya Dan Sukacitanya Saya Menjemput <br>Dato'/ Datin / Tuan / Puan / Cik / Encik<br></p>
 
                 <!-- Love Ballon animation -->
                 <div class="position-relative">
@@ -172,28 +160,33 @@
                         </svg>
                     </div>
                 </div>
+                
+                <p class="pb-3 px-3" style="font-size: 0.95rem;">Sekapur Sirih Seulas Pinang<br>Semekar Senyuman Seikhlas Hati, Saya<br></p>
+                <h3 class="font-esthetic" style="font-size: 2.0rem;">Ahmad Bin Hassan<br>Aisyah Binti Haron<br><br></h3>
+                <p class="pb-3 px-3" style="font-size: 0.95rem;">Dengan Segala Hormatnya Dan Sukacitanya Saya Menjemput <br>Dato'/ Datin / Tuan / Puan / Cik / Encik<br></p>
 
-                <div>
+                
+                <div class="overflow-hidden">
 
                     <div>
-                       
                         <h2  data-aos="fade-right" data-aos-duration="2000" class="font-esthetic" style="font-size: 2.5rem;">Ummi Salma Binti Ahmad</h2>
                         <p class="mt-3 mb-0" style="font-size: 0.95rem;">dengan pasangannya</p>
                         <p></p>
                         <h2 data-aos="fade-left" data-aos-duration="2000" class="font-esthetic" style="font-size: 2.5rem;">Muhammad Ridhwan Bin Rosli</h2>
                     </div>
 
-                    <!-- Love Ballon animation -->
-                    <div class="position-relative">
-                        <div class="position-absolute" style="top: 0%; right: 5%;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="opacity-50" onload="util.animate(this, 1500, 'animate-love')" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"></path>
-                            </svg>
-                        </div>
-                    </div>
-
-                   
                 </div>
+
+                <!-- Love Ballon animation -->
+                <div class="position-relative">
+                    <div class="position-absolute" style="top: 0%; right: 5%;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="opacity-50" onload="util.animate(this, 1500, 'animate-love')" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063q.068.062.132.129.065-.067.132-.129c3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3 3 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398"></path>
+                        </svg>
+                    </div>
+                </div>
+
+               
             </div>
         </section>
 
@@ -322,9 +315,9 @@
                     <div class="py-2" data-aos="fade-up" data-aos-duration="1500">
                         
                         <h2 class="font-esthetic py-3" style="font-size: 2.5rem;">Sila Hubungi</h2>
-                        <i class="fa-brands fa-whatsapp"></i><a class="mb-0 mt-1 mx-1 pb-4" style="font-size: 0.95rem;" target="_blank" href="https://wa.me/0108026958">ABAH: 010-8026958</a><br>
-                        <i class="fa-brands fa-whatsapp"></i><a class="mb-0 mt-1 mx-1 pb-4" style="font-size: 0.95rem;" target="_blank" href="https://wa.me/01111094893">AINA: 011-11094893</a><br>
-                        <i class="fa-brands fa-whatsapp"></i><a class="mb-0 mt-1 mx-1 pb-4" style="font-size: 0.95rem;" target="_blank" href="https://wa.me/01114470816">AZWA: 011-14470816</a>
+                        <i class="fa-brands fa-whatsapp"></i><a class="mb-0 mt-1 mx-1 pb-4" style="font-size: 0.95rem;" target="_blank" href="https://wa.me/+60108026958">ABAH: 010-8026958</a><br>
+                        <i class="fa-brands fa-whatsapp"></i><a class="mb-0 mt-1 mx-1 pb-4" style="font-size: 0.95rem;" target="_blank" href="https://wa.me/+601111094893">AINA: 011-11094893</a><br>
+                        <i class="fa-brands fa-whatsapp"></i><a class="mb-0 mt-1 mx-1 pb-4" style="font-size: 0.95rem;" target="_blank" href="https://wa.me/+601114470816">AZWA: 011-14470816</a>
                        
                     </div>
                     <div class="py-2" data-aos="fade-up" data-aos-duration="1500">
@@ -424,7 +417,7 @@
                         </div>
                         <div class="col-auto">
                             <small>
-                                <i class="fa-brands fa-whatsapp"></i><a target="_blank" href="https://wa.me/01151258273">Me</a>
+                                <i class="fa-brands fa-whatsapp"></i><a target="_blank" href="https://wa.me/+601151258273">Me</a>
                             </small>
                             <small>
                                 <i class="fa-brands fa-youtube me-1"></i><a target="_blank" href="https://www.youtube.com/watch?v=1WCIrw85zbQ">I Wanna Grow Old with You</a>
@@ -483,7 +476,7 @@
     <!-- Offline -->
     <div class="fixed-top" id="offline-mode" style="opacity: 0; z-index: 1057;">
         <div class="d-flex justify-content-center mx-auto">
-            <div class="d-flex justify-content-center align-items-center rounded-pill my-2 bg-danger shadow">
+            <div class="d-flex justify-content-center rounded-pill my-2 bg-danger shadow">
                 <small class="text-center py-1 px-2 mx-1 text-white" style="font-size: 0.8rem;"></small>
             </div>
         </div>
